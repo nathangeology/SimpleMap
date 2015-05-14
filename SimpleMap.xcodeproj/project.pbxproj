@@ -14,6 +14,9 @@
 		0A043D401B0447C0007F7A34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A043D3F1B0447C0007F7A34 /* Images.xcassets */; };
 		0A043D431B0447C0007F7A34 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A043D411B0447C0007F7A34 /* LaunchScreen.xib */; };
 		0A043D4F1B0447C0007F7A34 /* SimpleMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A043D4E1B0447C0007F7A34 /* SimpleMapTests.swift */; };
+		0A043D5C1B04E03D007F7A34 /* GS_MK_MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A043D5B1B04E03D007F7A34 /* GS_MK_MapView.swift */; };
+		0A043D5E1B04E061007F7A34 /* GS_MK_MapDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A043D5D1B04E061007F7A34 /* GS_MK_MapDataSource.swift */; };
+		0A043D631B04E105007F7A34 /* GS_MK_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A043D621B04E105007F7A34 /* GS_MK_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		0A043D481B0447C0007F7A34 /* SimpleMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A043D4D1B0447C0007F7A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A043D4E1B0447C0007F7A34 /* SimpleMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMapTests.swift; sourceTree = "<group>"; };
+		0A043D5B1B04E03D007F7A34 /* GS_MK_MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GS_MK_MapView.swift; sourceTree = "<group>"; };
+		0A043D5D1B04E061007F7A34 /* GS_MK_MapDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GS_MK_MapDataSource.swift; sourceTree = "<group>"; };
+		0A043D621B04E105007F7A34 /* GS_MK_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GS_MK_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		0A043D331B0447C0007F7A34 /* SimpleMap */ = {
 			isa = PBXGroup;
 			children = (
+				0A043D581B044863007F7A34 /* My Map Kit */,
 				0A043D361B0447C0007F7A34 /* AppDelegate.swift */,
 				0A043D381B0447C0007F7A34 /* FirstViewController.swift */,
 				0A043D3A1B0447C0007F7A34 /* SecondViewController.swift */,
@@ -113,6 +120,40 @@
 				0A043D4D1B0447C0007F7A34 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A043D581B044863007F7A34 /* My Map Kit */ = {
+			isa = PBXGroup;
+			children = (
+				0A043D5F1B04E068007F7A34 /* MapViewControllers */,
+				0A043D5A1B04487A007F7A34 /* MapViewHandling */,
+				0A043D591B044870007F7A34 /* MapDataHandling */,
+			);
+			name = "My Map Kit";
+			sourceTree = "<group>";
+		};
+		0A043D591B044870007F7A34 /* MapDataHandling */ = {
+			isa = PBXGroup;
+			children = (
+				0A043D5D1B04E061007F7A34 /* GS_MK_MapDataSource.swift */,
+			);
+			name = MapDataHandling;
+			sourceTree = "<group>";
+		};
+		0A043D5A1B04487A007F7A34 /* MapViewHandling */ = {
+			isa = PBXGroup;
+			children = (
+				0A043D5B1B04E03D007F7A34 /* GS_MK_MapView.swift */,
+			);
+			name = MapViewHandling;
+			sourceTree = "<group>";
+		};
+		0A043D5F1B04E068007F7A34 /* MapViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A043D621B04E105007F7A34 /* GS_MK_ViewController.swift */,
+			);
+			name = MapViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +259,9 @@
 				0A043D3B1B0447C0007F7A34 /* SecondViewController.swift in Sources */,
 				0A043D371B0447C0007F7A34 /* AppDelegate.swift in Sources */,
 				0A043D391B0447C0007F7A34 /* FirstViewController.swift in Sources */,
+				0A043D5C1B04E03D007F7A34 /* GS_MK_MapView.swift in Sources */,
+				0A043D631B04E105007F7A34 /* GS_MK_ViewController.swift in Sources */,
+				0A043D5E1B04E061007F7A34 /* GS_MK_MapDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +391,7 @@
 				INFOPLIST_FILE = SimpleMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -357,6 +402,7 @@
 				INFOPLIST_FILE = SimpleMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
