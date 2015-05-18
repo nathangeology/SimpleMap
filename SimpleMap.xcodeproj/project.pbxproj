@@ -17,6 +17,8 @@
 		0A043D5C1B04E03D007F7A34 /* GS_MK_MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A043D5B1B04E03D007F7A34 /* GS_MK_MapView.swift */; };
 		0A043D5E1B04E061007F7A34 /* GS_MK_MapDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A043D5D1B04E061007F7A34 /* GS_MK_MapDataSource.swift */; };
 		0A043D631B04E105007F7A34 /* GS_MK_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A043D621B04E105007F7A34 /* GS_MK_ViewController.swift */; };
+		0A9F8F991B0952AD00364952 /* GS_MK_MapDataNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F8F981B0952AD00364952 /* GS_MK_MapDataNode.swift */; };
+		0A9F8F9B1B09562800364952 /* GS_MK_CoordinateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F8F9A1B09562800364952 /* GS_MK_CoordinateManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		0A043D5B1B04E03D007F7A34 /* GS_MK_MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GS_MK_MapView.swift; sourceTree = "<group>"; };
 		0A043D5D1B04E061007F7A34 /* GS_MK_MapDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GS_MK_MapDataSource.swift; sourceTree = "<group>"; };
 		0A043D621B04E105007F7A34 /* GS_MK_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GS_MK_ViewController.swift; sourceTree = "<group>"; };
+		0A9F8F981B0952AD00364952 /* GS_MK_MapDataNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GS_MK_MapDataNode.swift; sourceTree = "<group>"; };
+		0A9F8F9A1B09562800364952 /* GS_MK_CoordinateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GS_MK_CoordinateManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				0A043D5D1B04E061007F7A34 /* GS_MK_MapDataSource.swift */,
+				0A9F8F981B0952AD00364952 /* GS_MK_MapDataNode.swift */,
+				0A9F8F9A1B09562800364952 /* GS_MK_CoordinateManager.swift */,
 			);
 			name = MapDataHandling;
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 			files = (
 				0A043D3B1B0447C0007F7A34 /* SecondViewController.swift in Sources */,
 				0A043D371B0447C0007F7A34 /* AppDelegate.swift in Sources */,
+				0A9F8F991B0952AD00364952 /* GS_MK_MapDataNode.swift in Sources */,
+				0A9F8F9B1B09562800364952 /* GS_MK_CoordinateManager.swift in Sources */,
 				0A043D391B0447C0007F7A34 /* FirstViewController.swift in Sources */,
 				0A043D5C1B04E03D007F7A34 /* GS_MK_MapView.swift in Sources */,
 				0A043D631B04E105007F7A34 /* GS_MK_ViewController.swift in Sources */,
@@ -459,6 +467,7 @@
 				0A043D541B0447C0007F7A34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A043D551B0447C0007F7A34 /* Build configuration list for PBXNativeTarget "SimpleMapTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +476,7 @@
 				0A043D571B0447C0007F7A34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

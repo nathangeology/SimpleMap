@@ -7,3 +7,19 @@
 //
 
 import Foundation
+import UIKit
+
+protocol GS_MK_MapDataSource {
+    func renderToView(view : UIView, containedInRegion mapCoordinates : coordinateSystem); //[Float] is placeholder, may need to have view conform to protocol too
+}
+
+
+
+//MapDataNode
+/*
+-can be the 'root' node
+-child objects contain drawable data
+-can render data to a view within given coordinates
+-can have parents/children if not the root node
+- will have subtypes like "points" or "line"
+*/
