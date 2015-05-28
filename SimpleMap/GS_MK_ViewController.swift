@@ -7,9 +7,10 @@
 //
 
 import UIKit
-
+import CoreData
 class GS_MK_ViewController: UIViewController {
-
+    var managedContext : NSManagedObjectContext!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
