@@ -17,24 +17,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
                                 <rect key="frame" x="221" y="279" width="157.5" height="41.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
                                 <rect key="frame" x="203" y="329" width="194.5" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aGT-iy-7eq" customClass="GS_MK_MapView" customModule="SimpleMap" customModuleProvider="target" colorLabel="IBBuiltInLabel-Red">
-                                <rect key="frame" x="0.0" y="15" width="319" height="195"/>
+                                <rect key="frame" x="0.0" y="50" width="600" height="493"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFm-rA-ecP">
-                                        <rect key="frame" x="118" y="87" width="42" height="21"/>
+                                        <rect key="frame" x="118" y="52" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -45,17 +45,23 @@
                                     <constraint firstAttribute="centerY" secondItem="MFm-rA-ecP" secondAttribute="centerY" id="Waz-Vm-hhe"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DM7-Fu-Apd">
+                                <rect key="frame" x="513" y="5" width="76" height="45"/>
+                                <state key="normal" title="Add Well"/>
+                                <connections>
+                                    <action selector="addWell:" destination="9pv-A4-QxB" eventType="touchUpInside" id="c7F-qG-AfY"/>
+                                    <segue destination="m6i-0y-eJW" kind="presentation" id="9wi-BQ-mKF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="aGT-iy-7eq" secondAttribute="trailing" constant="265" id="BD4-25-FCX"/>
-                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="aGT-iy-7eq" secondAttribute="bottom" constant="69" id="QJq-NB-FEC"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="aGT-iy-7eq" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" constant="15" id="dYq-PV-3fX"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
-                            <constraint firstItem="aGT-iy-7eq" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="lUg-tc-Pre"/>
+                            <constraint firstItem="aGT-iy-7eq" firstAttribute="top" secondItem="DM7-Fu-Apd" secondAttribute="bottom" constant="-25" id="2vZ-XW-lAc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DM7-Fu-Apd" secondAttribute="trailing" id="4Oc-ZU-GVA"/>
+                            <constraint firstItem="aGT-iy-7eq" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-50" id="BIv-jw-j9H"/>
+                            <constraint firstItem="DM7-Fu-Apd" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" constant="11" id="FnQ-Pw-DDH"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="aGT-iy-7eq" secondAttribute="bottom" constant="8" id="Mst-tf-DuY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aGT-iy-7eq" secondAttribute="trailing" id="RU8-Mz-hB6"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
@@ -63,6 +69,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Add Well View Controller-->
+        <scene sceneID="Zip-9q-faR">
+            <objects>
+                <viewController id="m6i-0y-eJW" customClass="AddWellViewController" customModule="SimpleMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CTT-y6-Aiw"/>
+                        <viewControllerLayoutGuide type="bottom" id="ggs-br-JkQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d33-PQ-V7w">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAx-zJ-ZoL">
+                                <rect key="frame" x="108" y="6" width="66" height="30"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Cancel:" destination="m6i-0y-eJW" eventType="touchUpInside" id="wZh-3c-pi0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVZ-pa-9DE">
+                                <rect key="frame" x="16" y="6" width="46" height="30"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Done:" destination="m6i-0y-eJW" eventType="touchUpInside" id="Je8-Jb-EFX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ym-v0-UkC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1567" y="-320"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">

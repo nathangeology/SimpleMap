@@ -22,6 +22,7 @@
 		0ADD4C2C1B14B1530012EB85 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADD4C2B1B14B1530012EB85 /* CoreDataStack.swift */; };
 		0ADD4C2F1B1756790012EB85 /* Simple Map.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0ADD4C2D1B1756790012EB85 /* Simple Map.xcdatamodeld */; };
 		0ADD4C311B1756E30012EB85 /* Well.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADD4C301B1756E30012EB85 /* Well.swift */; };
+		0ADD4C351B17EFEC0012EB85 /* AddWellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADD4C341B17EFEC0012EB85 /* AddWellViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		0ADD4C2B1B14B1530012EB85 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		0ADD4C2E1B1756790012EB85 /* Simple Map.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Simple Map.xcdatamodel"; sourceTree = "<group>"; };
 		0ADD4C301B1756E30012EB85 /* Well.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Well.swift; sourceTree = "<group>"; };
+		0ADD4C341B17EFEC0012EB85 /* AddWellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWellViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,8 @@
 		0A043D581B044863007F7A34 /* My Map Kit */ = {
 			isa = PBXGroup;
 			children = (
+				0ADD4C361B18E7FC0012EB85 /* WMS Query Services */,
+				0ADD4C331B17EFBD0012EB85 /* OtherViewControllers */,
 				0ADD4C2A1B14B13E0012EB85 /* CoreData */,
 				0A043D5F1B04E068007F7A34 /* MapViewControllers */,
 				0A043D5A1B04487A007F7A34 /* MapViewHandling */,
@@ -185,6 +189,69 @@
 				0A9F8F9A1B09562800364952 /* GS_MK_CoordinateManager.swift */,
 			);
 			name = NotBeingUsed;
+			sourceTree = "<group>";
+		};
+		0ADD4C331B17EFBD0012EB85 /* OtherViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0ADD4C341B17EFEC0012EB85 /* AddWellViewController.swift */,
+			);
+			name = OtherViewControllers;
+			sourceTree = "<group>";
+		};
+		0ADD4C361B18E7FC0012EB85 /* WMS Query Services */ = {
+			isa = PBXGroup;
+			children = (
+				0ADD4C3C1B18E8DD0012EB85 /* Basic HTTP */,
+				0ADD4C3B1B18E8D50012EB85 /* Get legend */,
+				0ADD4C3A1B18E8820012EB85 /* Get Feature Info */,
+				0ADD4C391B18E8210012EB85 /* GetMap */,
+				0ADD4C381B18E8160012EB85 /* WMS Capabilities */,
+				0ADD4C371B18E80C0012EB85 /* CRS Info */,
+			);
+			name = "WMS Query Services";
+			sourceTree = "<group>";
+		};
+		0ADD4C371B18E80C0012EB85 /* CRS Info */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CRS Info";
+			sourceTree = "<group>";
+		};
+		0ADD4C381B18E8160012EB85 /* WMS Capabilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "WMS Capabilities";
+			sourceTree = "<group>";
+		};
+		0ADD4C391B18E8210012EB85 /* GetMap */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = GetMap;
+			sourceTree = "<group>";
+		};
+		0ADD4C3A1B18E8820012EB85 /* Get Feature Info */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Get Feature Info";
+			sourceTree = "<group>";
+		};
+		0ADD4C3B1B18E8D50012EB85 /* Get legend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Get legend";
+			sourceTree = "<group>";
+		};
+		0ADD4C3C1B18E8DD0012EB85 /* Basic HTTP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Basic HTTP";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +360,7 @@
 				0A9F8F991B0952AD00364952 /* GS_MK_MapDataNode.swift in Sources */,
 				0ADD4C2C1B14B1530012EB85 /* CoreDataStack.swift in Sources */,
 				0A9F8F9B1B09562800364952 /* GS_MK_CoordinateManager.swift in Sources */,
+				0ADD4C351B17EFEC0012EB85 /* AddWellViewController.swift in Sources */,
 				0A043D391B0447C0007F7A34 /* FirstViewController.swift in Sources */,
 				0A043D5C1B04E03D007F7A34 /* GS_MK_MapView.swift in Sources */,
 				0ADD4C2F1B1756790012EB85 /* Simple Map.xcdatamodeld in Sources */,

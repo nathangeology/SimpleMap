@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 //Data Structures
+/*
 struct GS_MK_Point : pointCoordinate {
     var x,y : CGFloat
 }
@@ -103,4 +104,4 @@ class GS_MK_CoodinateManager : updateRelatedCoordinateSystem{
         //TODO: Setup update of map coordinates from a change in screen coordinates
     }
     
-}
+}*/

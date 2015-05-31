@@ -19,7 +19,7 @@ class GS_MK_MapDataNode : GS_MK_MapDataSource  {
     
     
     //TODO: render method is empty except to call renderers for children
-    func renderToView(view : UIView, containedInRegion mapCoordinates : coordinateSystem) {}
+  //  func renderToView(view : UIView, containedInRegion mapCoordinates : coordinateSystem) {}
     
 }
 
@@ -28,5 +28,5 @@ class GS_MK_PointDataNode : GS_MK_MapDataNode {
     //TODO: Should set point size, color, etc
     
     //TODO: Need to render point at the given coordinates
-    override func renderToView(view : UIView, containedInRegion mapCoordinates : coordinateSystem) {}
+    //override func renderToView(view : UIView, containedInRegion mapCoordinates : coordinateSystem) {}
 }

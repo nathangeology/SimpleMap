@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol GS_MK_MapDataSource {
-    func renderToView(view : UIView, containedInRegion mapCoordinates : coordinateSystem); //[Float] is placeholder, may need to have view conform to protocol too
+    //func renderToView(view : UIView, containedInRegion mapCoordinates : coordinateSystem); //[Float] is placeholder, may need to have view conform to protocol too
 }
 
 

@@ -8,12 +8,27 @@
 
 import UIKit
 import CoreData
-class GS_MK_ViewController: UIViewController {
+class GS_MK_ViewController: UIViewController, NSXMLParserDelegate {
     var managedContext : NSManagedObjectContext!
-    
+    var wells : [Well] = []
+    var parser : NSXMLParser!
+    var posts : NSMutableArray = []
+    var elements : NSMutableDictionary!
+    var title1 : String!
+    var date : String!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let url = NSURL(string: "http://services.azgs.az.gov/ArcGIS/services/aasggeothermal/CAWellLogs/MapServer/WFSServer?request=GetCapabilities&service=WFS")//?version=1.3.0&request=GetCapabilities&service=WMS
+        
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
+            //println(NSString(data: data, encoding: NSUTF8StringEncoding))
+            self.parser = NSXMLParser(data: data)
+            self.parser.delegate = self
+            self.parser.parse()
+            
+        }
+        
+        task.resume()
         // Do any additional setup after loading the view.
     }
 
@@ -22,7 +37,19 @@ class GS_MK_ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func addWell(sender: AnyObject) {
+        
+        println("Add a well!!")
+    }
+    func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+        println("Ending Element name: \(elementName) ")
+    }
+    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [NSObject : AnyObject]) {
+        println("Starting Element Named: \(elementName)")
+    }
+    func parser(parser: NSXMLParser, foundCharacters string: String?) {
+        println("stuff in element: \(string)")
+    }
     /*
     // MARK: - Navigation
 
