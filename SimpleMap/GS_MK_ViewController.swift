@@ -18,17 +18,23 @@ class GS_MK_ViewController: UIViewController, NSXMLParserDelegate {
     var date : String!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = NSURL(string: "http://services.azgs.az.gov/ArcGIS/services/aasggeothermal/CAWellLogs/MapServer/WFSServer?request=GetCapabilities&service=WFS")//?version=1.3.0&request=GetCapabilities&service=WMS
+        //let url = NSURL(string: "http://services.azgs.az.gov/ArcGIS/services/aasggeothermal/CAWellLogs/MapServer/WFSServer?request=GetCapabilities&service=WFS")//?version=1.3.0&request=GetCapabilities&service=WMS
         
-        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
+        /*let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
             //println(NSString(data: data, encoding: NSUTF8StringEncoding))
-            self.parser = NSXMLParser(data: data)
+                        self.parser = NSXMLParser(data: data!)
             self.parser.delegate = self
             self.parser.parse()
             
+            
+            //Fetch well info
+            
+            
+            //If none found, create sample dataset
+            
         }
         
-        task.resume()
+        task!.resume()*/
         // Do any additional setup after loading the view.
     }
 
@@ -39,16 +45,16 @@ class GS_MK_ViewController: UIViewController, NSXMLParserDelegate {
     
     @IBAction func addWell(sender: AnyObject) {
         
-        println("Add a well!!")
+        print("Add a well!!")
     }
     func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
-        println("Ending Element name: \(elementName) ")
+        //println("Ending Element name: \(elementName) ")
     }
-    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [NSObject : AnyObject]) {
-        println("Starting Element Named: \(elementName)")
+    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String: String]) {
+       // println("Starting Element Named: \(elementName)")
     }
-    func parser(parser: NSXMLParser, foundCharacters string: String?) {
-        println("stuff in element: \(string)")
+    func parser(parser: NSXMLParser, foundCharacters string: String) {
+       // println("stuff in element: \(string)")
     }
     /*
     // MARK: - Navigation

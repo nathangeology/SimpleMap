@@ -22,7 +22,7 @@ class Well: NSManagedObject {
         X = x;
         Y = y;
     }
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         X = aDecoder.decodeFloatForKey("X")
         Y = aDecoder.decodeFloatForKey("Y")
         

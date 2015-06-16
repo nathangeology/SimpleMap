@@ -17,12 +17,18 @@
 		0A043D5C1B04E03D007F7A34 /* GS_MK_MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A043D5B1B04E03D007F7A34 /* GS_MK_MapView.swift */; };
 		0A043D5E1B04E061007F7A34 /* GS_MK_MapDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A043D5D1B04E061007F7A34 /* GS_MK_MapDataSource.swift */; };
 		0A043D631B04E105007F7A34 /* GS_MK_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A043D621B04E105007F7A34 /* GS_MK_ViewController.swift */; };
+		0A639DD71B2D143F00C11F27 /* OGC_Server_HTTP_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A639DD61B2D143F00C11F27 /* OGC_Server_HTTP_Tests.swift */; };
+		0A639DD91B2D147800C11F27 /* OGC_HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A639DD81B2D147800C11F27 /* OGC_HTTP.swift */; };
 		0A9F8F991B0952AD00364952 /* GS_MK_MapDataNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F8F981B0952AD00364952 /* GS_MK_MapDataNode.swift */; };
 		0A9F8F9B1B09562800364952 /* GS_MK_CoordinateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F8F9A1B09562800364952 /* GS_MK_CoordinateManager.swift */; };
 		0ADD4C2C1B14B1530012EB85 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADD4C2B1B14B1530012EB85 /* CoreDataStack.swift */; };
 		0ADD4C2F1B1756790012EB85 /* Simple Map.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0ADD4C2D1B1756790012EB85 /* Simple Map.xcdatamodeld */; };
 		0ADD4C311B1756E30012EB85 /* Well.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADD4C301B1756E30012EB85 /* Well.swift */; };
 		0ADD4C351B17EFEC0012EB85 /* AddWellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADD4C341B17EFEC0012EB85 /* AddWellViewController.swift */; };
+		0AE25F831B226F04009C877E /* WMS_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE25F821B226F04009C877E /* WMS_Tests.swift */; };
+		0AE25F851B23B3C9009C877E /* WMS_Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE25F841B23B3C9009C877E /* WMS_Server.swift */; };
+		0AE25F871B24FB38009C877E /* WMSParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE25F861B24FB38009C877E /* WMSParsing.swift */; };
+		0AE25F881B24FED4009C877E /* WMSParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE25F861B24FB38009C877E /* WMSParsing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,12 +56,18 @@
 		0A043D5B1B04E03D007F7A34 /* GS_MK_MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GS_MK_MapView.swift; sourceTree = "<group>"; };
 		0A043D5D1B04E061007F7A34 /* GS_MK_MapDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GS_MK_MapDataSource.swift; sourceTree = "<group>"; };
 		0A043D621B04E105007F7A34 /* GS_MK_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GS_MK_ViewController.swift; sourceTree = "<group>"; };
+		0A639DD61B2D143F00C11F27 /* OGC_Server_HTTP_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OGC_Server_HTTP_Tests.swift; sourceTree = "<group>"; };
+		0A639DD81B2D147800C11F27 /* OGC_HTTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OGC_HTTP.swift; sourceTree = "<group>"; };
+		0A79ED221B28754E006B4DC7 /* parseTest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = parseTest.xml; path = SimpleMapTests/parseTest.xml; sourceTree = "<group>"; };
 		0A9F8F981B0952AD00364952 /* GS_MK_MapDataNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GS_MK_MapDataNode.swift; sourceTree = "<group>"; };
 		0A9F8F9A1B09562800364952 /* GS_MK_CoordinateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GS_MK_CoordinateManager.swift; sourceTree = "<group>"; };
 		0ADD4C2B1B14B1530012EB85 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		0ADD4C2E1B1756790012EB85 /* Simple Map.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Simple Map.xcdatamodel"; sourceTree = "<group>"; };
 		0ADD4C301B1756E30012EB85 /* Well.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Well.swift; sourceTree = "<group>"; };
 		0ADD4C341B17EFEC0012EB85 /* AddWellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWellViewController.swift; sourceTree = "<group>"; };
+		0AE25F821B226F04009C877E /* WMS_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMS_Tests.swift; sourceTree = "<group>"; };
+		0AE25F841B23B3C9009C877E /* WMS_Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMS_Server.swift; sourceTree = "<group>"; };
+		0AE25F861B24FB38009C877E /* WMSParsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMSParsing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +94,7 @@
 				0A043D331B0447C0007F7A34 /* SimpleMap */,
 				0A043D4B1B0447C0007F7A34 /* SimpleMapTests */,
 				0A043D321B0447C0007F7A34 /* Products */,
+				0A79ED221B28754E006B4DC7 /* parseTest.xml */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +133,8 @@
 		0A043D4B1B0447C0007F7A34 /* SimpleMapTests */ = {
 			isa = PBXGroup;
 			children = (
+				0A639DD61B2D143F00C11F27 /* OGC_Server_HTTP_Tests.swift */,
+				0AE25F821B226F04009C877E /* WMS_Tests.swift */,
 				0A043D4E1B0447C0007F7A34 /* SimpleMapTests.swift */,
 				0A043D4C1B0447C0007F7A34 /* Supporting Files */,
 			);
@@ -208,6 +223,7 @@
 				0ADD4C391B18E8210012EB85 /* GetMap */,
 				0ADD4C381B18E8160012EB85 /* WMS Capabilities */,
 				0ADD4C371B18E80C0012EB85 /* CRS Info */,
+				0AE25F841B23B3C9009C877E /* WMS_Server.swift */,
 			);
 			name = "WMS Query Services";
 			sourceTree = "<group>";
@@ -222,6 +238,7 @@
 		0ADD4C381B18E8160012EB85 /* WMS Capabilities */ = {
 			isa = PBXGroup;
 			children = (
+				0AE25F861B24FB38009C877E /* WMSParsing.swift */,
 			);
 			name = "WMS Capabilities";
 			sourceTree = "<group>";
@@ -250,6 +267,7 @@
 		0ADD4C3C1B18E8DD0012EB85 /* Basic HTTP */ = {
 			isa = PBXGroup;
 			children = (
+				0A639DD81B2D147800C11F27 /* OGC_HTTP.swift */,
 			);
 			name = "Basic HTTP";
 			sourceTree = "<group>";
@@ -298,7 +316,8 @@
 		0A043D291B0447C0007F7A34 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Nate Geo LLC";
 				TargetAttributes = {
 					0A043D301B0447C0007F7A34 = {
@@ -356,11 +375,14 @@
 			files = (
 				0A043D3B1B0447C0007F7A34 /* SecondViewController.swift in Sources */,
 				0ADD4C311B1756E30012EB85 /* Well.swift in Sources */,
+				0AE25F851B23B3C9009C877E /* WMS_Server.swift in Sources */,
 				0A043D371B0447C0007F7A34 /* AppDelegate.swift in Sources */,
 				0A9F8F991B0952AD00364952 /* GS_MK_MapDataNode.swift in Sources */,
 				0ADD4C2C1B14B1530012EB85 /* CoreDataStack.swift in Sources */,
+				0A639DD91B2D147800C11F27 /* OGC_HTTP.swift in Sources */,
 				0A9F8F9B1B09562800364952 /* GS_MK_CoordinateManager.swift in Sources */,
 				0ADD4C351B17EFEC0012EB85 /* AddWellViewController.swift in Sources */,
+				0AE25F871B24FB38009C877E /* WMSParsing.swift in Sources */,
 				0A043D391B0447C0007F7A34 /* FirstViewController.swift in Sources */,
 				0A043D5C1B04E03D007F7A34 /* GS_MK_MapView.swift in Sources */,
 				0ADD4C2F1B1756790012EB85 /* Simple Map.xcdatamodeld in Sources */,
@@ -374,6 +396,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A043D4F1B0447C0007F7A34 /* SimpleMapTests.swift in Sources */,
+				0AE25F831B226F04009C877E /* WMS_Tests.swift in Sources */,
+				0A639DD71B2D143F00C11F27 /* OGC_Server_HTTP_Tests.swift in Sources */,
+				0AE25F881B24FED4009C877E /* WMSParsing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +453,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -494,6 +520,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NateGEO.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -505,6 +532,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NateGEO.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -524,6 +552,7 @@
 				);
 				INFOPLIST_FILE = SimpleMapTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NateGEO.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleMap.app/SimpleMap";
 			};
@@ -539,6 +568,7 @@
 				);
 				INFOPLIST_FILE = SimpleMapTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NateGEO.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleMap.app/SimpleMap";
 			};

@@ -17,7 +17,7 @@ class CoreDataStack {
     
     class func applicationDocumentDirectory() ->NSURL {
         let fileManager = NSFileManager.defaultManager()
-        let urls = fileManager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask) as! [NSURL]
+        let urls = fileManager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask) as [NSURL]
         return urls[0]
     }
     
@@ -28,7 +28,7 @@ class CoreDataStack {
         
         psc = NSPersistentStoreCoordinator(managedObjectModel: model)
         
-        context = NSManagedObjectContext()
+        context = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
         
         context.persistentStoreCoordinator = psc;
         
@@ -37,18 +37,24 @@ class CoreDataStack {
         let storeURL = documentsURL.URLByAppendingPathComponent("Simple Map")
         
         let options = [NSMigratePersistentStoresAutomaticallyOption: true]
-        var error : NSError? = nil
-        store = psc.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: storeURL, options: options, error: &error)
-        
-        if store == nil {
-            println("Error adding persistent store: \(error)")
+       
+        do {
+            store = try psc.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: storeURL, options: options)
+        } catch  _ as NSError {
+            
+            store = nil
             abort()
         }
+        
+        
     }
     func saveContext() {
-        var error : NSError? = nil
-        if context.hasChanges && !context.save(&error) {
-            println("Could not save: \(error), \(error?.userInfo)")
+        if context.hasChanges {
+            do {
+             try context.save()
+            }catch let error as NSError{
+            print("Could not save: \(error), \(error.userInfo)")
+            }
         }
     }
 }

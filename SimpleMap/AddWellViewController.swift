@@ -28,12 +28,12 @@ class AddWellViewController: UIViewController {
     @IBAction func Done(sender: AnyObject) {
         self.performSegueWithIdentifier("Done", sender: sender)
     }
-    override func performSegueWithIdentifier(identifier: String?, sender: AnyObject?) {
-        if identifier! == "Cancel"{
-            println("Cancel")
+    override func performSegueWithIdentifier(identifier: String, sender: AnyObject?) {
+        if identifier == "Cancel"{
+            print("Cancel")
             self.dismissViewControllerAnimated(true, completion: nil)
         } else {
-            println("DONE")
+            print("DONE")
             self.dismissViewControllerAnimated(true, completion: nil)
         }
     }
